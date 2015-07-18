@@ -1,0 +1,34 @@
+/**
+ * Theme Name: foundation5_s
+ * Author: Bradley J. Bodine
+ * Description: A base WordPress Theme including Foundation 5.
+ * Version: 0.0
+ */
+
+// _style.css.scss
+// ------------------------------------------------------------------------- */
+// No code goes here, only imports. This is the primary sass file.
+
+// Base settings for foundation
+@import "normalize"; 
+@import "compass"; 
+@import "settings";
+@import "foundation";
+
+// Modules and Variables
+// @import "partials/base";
+
+// Third-party
+// @import "vendor/fonts"; 
+
+// Partials
+// @import "partials/reset";
+// @import "partials/general";
+// @import "partials/typography";
+// @import "partials/global_topbar";
+// @import "partials/subnav";
+// @import "partials/loop_styles";
+// @import "partials/single_styles";
+// @import "partials/post-entry";
+// @import "partials/footer";
+// ...
