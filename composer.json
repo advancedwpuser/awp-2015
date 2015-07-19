@@ -1,0 +1,14 @@
+{
+  "name": "advancedwp/awp-2015",
+  "type": "wordpress-theme",
+  "license": "GPLv2",
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/advancedwp/awp-2015"
+    }
+  ],
+  "require": {
+    "composer/installers": "~1.0"
+  }
+}
