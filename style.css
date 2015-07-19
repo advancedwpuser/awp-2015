@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Raleway:400,700);
+@import url(//fonts.googleapis.com/css?family=Raleway:400,700);
 
 /* @import must be at top of file, otherwise CSS will not work */
 @import url("//hello.myfonts.net/count/2be0a5");
@@ -9,8 +9,8 @@
  Description:  AWP theme based on Foundation and Underscores
  Author:       The AdvancedWP Community
  Author URI:   http://www.advancedwp.org
- Template:     _awp
- Version:      0.1.0
+ GitHub Theme URI: https://github.com/advancedwp/awp-2015
+ Version:      1.0
  Tags:         underscores, foundation, awesomeness
  Text Domain:  awp_web
 */
