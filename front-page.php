@@ -56,7 +56,7 @@ get_header(); ?>
                     echo '<div>';
                     echo '<p>'.$field['subnav_description'].'</p>';
                     echo '<a href="'.$field['subnav_url'].'">';
-                    echo '<h3>'.$field['subnav_title'].' <br><img src="/wp-content/themes/_awp-child/images/subnavigation-arrow.png" alt=""></h3>';
+                    echo '<h3>'.$field['subnav_title'].' <br><img src="' . get_template_directory_uri() . '/assets/images/subnavigation-arrow.png" alt=""></h3>';
                     echo '</a>';
                     echo '</div>';
                     echo '</div>';
