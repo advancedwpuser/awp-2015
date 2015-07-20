@@ -6992,11 +6992,6 @@ body.home .columns h2 {
 
 /* Structure
 -------------------------------------------------------------- */
-body {
-  background: url('assets/images/advanced-wordpress-meetup-group.jpg') center top no-repeat;
-  background-size: contain;
-}
-
 
 .titlebar {
 	min-height:108px;
@@ -7019,6 +7014,11 @@ body {
 .mainmenu {
     padding-top:2.5%;
     padding-bottom:2.5%;
+}
+
+.herowrapper {
+  background: url('assets/images/advanced-wordpress-meetup-group.jpg') 50% 50% no-repeat;
+  background-size: cover;
 }
 
 .hero {

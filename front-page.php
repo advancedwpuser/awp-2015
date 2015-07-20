@@ -4,16 +4,17 @@ Template Name: Homepage
 */
 get_header(); ?>
 
-	<div class="row">
-		<div class="hero columns">
-			<div class="logo">
-				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/awp-logo-light.png" alt="Advanced WordPress logo">
-				</a>
+<div class="herowrapper">
+    <div class="row">
+        <div class="hero columns">
+            <div class="logo">
+                <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/awp-logo-light.png" alt="Advanced WordPress logo">
+                </a>
         <p>For those who like their WordPress &hellip; Advanced.</p>
-			</div>
-		</div>
-	</div>
+            </div>
+        </div>
+    </div>
 </div>
 
 <div class="whoweare">
