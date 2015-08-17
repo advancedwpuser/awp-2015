@@ -1,38 +1,14 @@
-<?php
-/**
- * The template for displaying Search Results pages.
- *
- * @package foundation5_s
- */
+<?php get_template_part('templates/page', 'header'); ?>
 
-get_header(); ?>
+<?php if (!have_posts()) : ?>
+  <div class="alert alert-warning">
+    <?php _e('Sorry, no results were found.', 'sage'); ?>
+  </div>
+  <?php get_search_form(); ?>
+<?php endif; ?>
 
-	<div class="row">
-		<div class="columns">
+<?php while (have_posts()) : the_post(); ?>
+  <?php get_template_part('templates/content', 'search'); ?>
+<?php endwhile; ?>
 
-		<?php if ( have_posts() ) : ?>
-
-			<header class="page-header">
-				<h1 class="page-title"><?php printf( __( 'Search Results for: %s', 'foundation5_s' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
-			</header><!-- .page-header -->
-
-			<?php /* Start the Loop */ ?>
-			<?php while ( have_posts() ) : the_post(); ?>
-
-				<?php get_template_part( 'content', 'search' ); ?>
-
-			<?php endwhile; ?>
-
-			<?php foundation5_s_paging_nav(); ?>
-
-		<?php else : ?>
-
-			<?php get_template_part( 'content', 'none' ); ?>
-
-		<?php endif; ?>
-
-		</div>
-	</div>
-
-<?php get_sidebar(); ?>
-<?php get_footer(); ?>
+<?php the_posts_navigation(); ?>

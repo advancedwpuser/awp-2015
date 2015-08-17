@@ -1563,7 +1563,7 @@ QUnit.jsDump = (function() {
 		return join( "[", ret, "]" );
 	}
 
-	var foundation5_s = /^function (\w+)/,
+	var reName = /^function (\w+)/,
 		jsDump = {
 			parse: function( obj, type, stack ) { //type is used mostly internally, you can fix a (custom)type in advance
 				stack = stack || [ ];
@@ -1654,7 +1654,7 @@ QUnit.jsDump = (function() {
 				"undefined": "undefined",
 				"function": function( fn ) {
 					var ret = "function",
-						name = "name" in fn ? fn.name : (foundation5_s.exec(fn) || [])[1];//functions never have name in IE
+						name = "name" in fn ? fn.name : (reName.exec(fn) || [])[1];//functions never have name in IE
 
 					if ( name ) {
 						ret += " " + name;
