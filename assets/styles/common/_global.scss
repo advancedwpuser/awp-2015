@@ -20,5 +20,21 @@ header.banner {
 }
 
 h1,h2,h3,h4 {
+  font-family: 'Courier', 'Helvetica Neu', Helvetica, Arial, sans-serif;
+}
+h1,h2,h3 {
+  text-transform: lowercase;
+  word-spacing: -0.7rem;
+  color: $black;
+}
+.page-header h1:after,
+h1.entry-title:after {
+  content: "()";
+}
+
+.content main {
   font-family: 'Raleway', 'Helvetica Neu', Helvetica, Arial, sans-serif;
+  font-size: 1.2em;
+  color: lighten($black, 20%);
+  line-height: 1.6;
 }

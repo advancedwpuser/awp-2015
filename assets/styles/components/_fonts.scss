@@ -58,3 +58,27 @@
     font-weight: normal;
     font-style: normal;
 }
+
+@font-face {
+    font-family: 'Bitter';
+    src: url('../fonts/bitter-bold-webfont.eot');
+    src: url('../fonts/bitter-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/bitter-bold-webfont.woff2') format('woff2'),
+         url('../fonts/bitter-bold-webfont.woff') format('woff'),
+         url('../fonts/bitter-bold-webfont.ttf') format('truetype'),
+         url('../fonts/bitter-bold-webfont.svg#bitterbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Courier';
+    src: url('../fonts/courier_prime_bold-webfont.eot');
+    src: url('../fonts/courier_prime_bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/courier_prime_bold-webfont.woff2') format('woff2'),
+         url('../fonts/courier_prime_bold-webfont.woff') format('woff'),
+         url('../fonts/courier_prime_bold-webfont.ttf') format('truetype'),
+         url('../fonts/courier_prime_bold-webfont.svg#courier') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
